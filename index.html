@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susan Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Readex Pro', sans-serif;
+        background-image: url(/images/GYMBG.jpg);
+        background-size: 1280px 800px;
+        background-repeat: no-repeat;
+        color: #f4fcfe;
+
+    }
+
+    .left {
+        padding: 3px 13px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .left img {
+        width: 71px;
+        filter: invert(100%);
+        position: relative;
+        left: 33.5px;
+        top: 11px;
+    }
+
+    .mid {
+        position: relative;
+        top: 20px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* margin-top: 5px;
+            margin-bottom: 5px; */
+
+    }
+
+    .navbar li a {
+        color: #f4fcfe;
+        text-decoration: none;
+        padding: 20px 34px;
+        font-size: 20px;
+        position: relative;
+        right: 20px;
+    }
+
+    .navbar li :hover {
+        background-color: #303041b4;
+        border-radius: 50px;
+        text-decoration: underline;
+    }
+
+    .right {
+        position: relative;
+        top: 30px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .btn {
+        padding: 5px 1px;
+        margin: 9px 9px;
+        color: #f4fcfe;
+        background-color: #303041;
+        width: 130px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Readex Pro', sans-serif;
+        font-size: medium;
+    }
+
+    .btn-form {
+        width: 75px;
+        font-size: medium;
+        height: 25px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .btn:hover {
+        background-color: #3d3a50;
+    }
+
+    #Form {
+        border: 1px solid #3d3a50;
+        margin: 25px 50px;
+        padding: 7px 15px;
+        width: 25%;
+        font-size: small;
+        background-color: #303041af;
+        border-radius: 20px;
+        box-shadow: 7px 7px;
+        position: relative;
+        top: 150px;
+    }
+
+    .form-group {
+        font-size: medium;
+        padding: 3px 3px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .Data {
+        border-radius: 11px;
+        width: 80%;
+        padding: 3px 5px;
+        margin: 6px 0px;
+    }
+
+    .Socialmedia {
+        width: 80px;
+        position: relative;
+        left: 1150px;
+        top: 110px;
+
+    }
+
+    .Insta {
+        position: relative;
+        top: 3px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <a href="#">
+                <img src="/images/Logo.png" alt="">
+            </a>
+            <div>
+                SUSHANT FITNESS
+            </div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="/Projects/Gym_Website/index.html">Home</a> </li>
+                <li> <a href="/Projects/Gym_Website/About_Us.html">About Us</a> </li>
+                <li> <a href="/Projects/Gym_Website/Fitness_Calculator.html">Fitness Calculator</a> </li>
+                <li> <a href="/Projects/Gym_Website/contact.html">Contact Us</a> </li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button><br>
+            <button class="btn">Email Us</button>
+        </div>
+    </div>
+
+    <div id="Form">
+        <h1>
+            Join Now!!!
+            <form action="noaction.php">
+                <div class="form-group">
+                    NAME:
+                    <br>
+                    <input type="text" class="Data" name="Name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    EMAIL:
+                    <br>
+                    <input type="email" class="Data" name="Email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    PHONE-NO:
+                    <br>
+                    <input type="tel" class="Data" name="Phone-No." placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    GENDER:
+                    <div>
+                        <input type="radio" name="Gender"> Male
+                    </div>
+                    <div>
+                        <input type="radio" name="Gender"> Female
+                    </div>
+                </div>
+                <button class="btn-form">
+                    <strong>
+                        Submit
+                    </strong>
+                </button>
+            </form>
+        </h1>
+    </div>
+    <div class="Socialmedia">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="/images/Instagram.png" class="Insta" width="43px" height="32.25px">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="/images/Facebook.png" class="Facebook" width="31px" height="28.5px">
+        </a>
+    </div>
+</body>
+
+</html>
